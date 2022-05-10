@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+}
+
+
+.glow::before, .glow::after{
+    content: '';
+    position: absolute;
+    Left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, rgb(78, 185, 83), rgb(5, 161, 172), rgb(228, 52, 52), rgb(248, 58, 255));
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    background-position: 0;
+    background-position: 408% e;
+    background-position: 0;
+    }
+@keyframes animate{
+    8%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter: blur(20px);
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: #000000;
+}
+.icon{
+        
+    color: #fff;
+    
+    animation: firts_color .5s
+    ease-in-out infinite alternate;
+}
+.icon2{
+    color: #fff;
+
+    animation: second_color .5s
+    ease-in-out infinite alternate;
+}
+.icon3{
+    color: #fff;
+
+    animation: third_color .5s
+    ease-in-out infinite alternate;
+}
+
+
+@keyframes firts_color {
+
+    0%{
+        text-shadow: 0 0 10px #fbff11,0 0 20px #fbff11, 0 0 30px   #285AEB;
+    }
+    100%{
+        text-shadow: 0 0 5px #ff1177,
+        0 0 10px #d6249f, 0 0 15px #285AEB;
+    }
+}
+
+@keyframes second_color {
+    0%{
+        text-shadow: 0 0 10px #11ff45,0 0 20px #ff1177, 0 0 30px   #285AEB;
+    }
+    100%{
+        text-shadow: 0 0 5px #ff1177,
+        0 0 10px #d6249f, 0 0 15px #28eb63;
+    }
+}
+@keyframes third_color{
+    0%{
+        text-shadow: 0 0 10px #efff11,0 0 20px #dbff11, 0 0 30px   #b1eb28;
+    }
+    100%{
+        text-shadow: 0 0 5px #b8ff11,
+        0 0 10px #c4d624, 0 0 15px #eb7028;
+    }
+}
